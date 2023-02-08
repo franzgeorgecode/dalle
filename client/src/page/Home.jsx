@@ -26,7 +26,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('dalle-production.up.railway.app', {
+      const response = await fetch('https://dalle-production.up.railway.app/api/v1/post', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
